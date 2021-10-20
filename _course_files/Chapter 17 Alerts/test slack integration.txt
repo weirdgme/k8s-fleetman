@@ -1,1 +1,4 @@
-curl -X POST --data-urlencode "payload={\"channel\": \"#alerts\", \"username\": \"webhookbot\", \"text\": \"This is posted to #alerts and comes from a bot named webhookbot.\", \"icon_emoji\": \":ghost:\"}"
+curl -X POST --data-urlencode "payload={\"channel\": \"#alerts-for-k8s-cluster\", \"username\": \"webhookbot\", \"text\": \"This is posted to #alerts and comes from a bot named webhookbot.\", \"icon_emoji\": \":ghost:\"}" https://hooks.slack.com/services/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
+
+resources requests: cpu and memory are requested else, scheduled on another pod
+resources limits: for cpu, it becomes throttled. For memory, container is restarted
